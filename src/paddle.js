@@ -17,7 +17,7 @@ export default class Paddle {
         ctx.fillStyle = '#off';
         ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
     
-update(deltaTime) {
+update(deltaTime) 
     if(!deltaTime) return;
 
 }
