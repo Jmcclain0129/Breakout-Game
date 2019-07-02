@@ -11,7 +11,6 @@ export default class Paddle {
             y: gameHeight - this.height - 10,
 
         }
-    }
 
         draw(ctx) {
             ctx.fillStyle = '#off';
@@ -19,6 +18,5 @@ export default class Paddle {
     
         update(deltaTime) {
                 if(!deltaTime) return;
-
     }
 }
