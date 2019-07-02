@@ -20,15 +20,17 @@ let lastTime = 0;
 
 function gameLoop(timestamp) {
 
-    let deltaTime = timeStamp - lastTime;
+    let deltaTime = timestamp - lastTime;
     lastTime = timestamp;
     
     ctx.clearRect(0, 0, 800, 600);
-    paddle.updatedeltaTime();
-    paddleDraw(ctx);
+    paddle.update(deltaTime);
+    paddle.draw(ctx);
 
-    requestAnimationFrame(gameloop);
+    requestAnimationFrame(gameLoop);
 
  }
 
  gameLoop();
+
+ 
